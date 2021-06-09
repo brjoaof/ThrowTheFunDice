@@ -1,0 +1,16 @@
+Qual é o Problema?
+-> Ninguém tem dados em casa para jogar e ver quem é o mais sortudo. Necessidade de Entreternimento.
+
+
+Como resolver o problema da Forma Simples? 
+-> Criar um aplicativo android que gere dois números aleatórios ao clique de um botão e mostre na tela
+
+
+Resolução do Problema em etapas:
+
+Criar um Projeto Android
+Adicionar um TextView para informar o que o programa faz para o usuário
+Adicionar um TextView para mostrar o Resultado
+Criar método para "lançar o dado" (sortear dois números aleatórios de 1 a 6) e colocar o resultado no TextView
+Adicionar um Button que chama o método
+
