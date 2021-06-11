@@ -11,9 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dado1 = findViewById<ImageView>(R.id.dado1_IV)
-        val dado2 = findViewById<ImageView>(R.id.dado2_IV)
+        val playerName = intent.getStringExtra("playername")
+
+        val dice1 = findViewById<ImageView>(R.id.dice1_IV)
+        val dice2 = findViewById<ImageView>(R.id.dice2_IV)
         val btn = findViewById<Button>(R.id.throw_btn)
+        val welcomeMessage = findViewById<TextView>(R.id.welcomeMessage)
+
+        welcomeMessage.text = getString(R.string.welcome, playerName)
 
         val listImages = listOf(
             R.drawable.dice_1,
@@ -25,8 +30,8 @@ class MainActivity : AppCompatActivity() {
         )
 
         btn.setOnClickListener{
-            dado1.setImageResource(listImages.random())
-            dado2.setImageResource(listImages.random())
+            dice1.setImageResource(listImages.random())
+            dice2.setImageResource(listImages.random())
         }
 
     }
