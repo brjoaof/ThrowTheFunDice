@@ -2,7 +2,7 @@
     <string name="app_name">ThrowTheFunDice</string>
     <string name="dado_1">Dado 1</string>
     <string name="dado_2">Dado 2</string>
-    <string name="jogar">Jogar</string>
+    <string name="to_play">Throw the Dice Now!</string>
     <string name="welcome">Welcome %s</string>
     <string name="name_hint">What\'s your name?</string>
 </resources>
