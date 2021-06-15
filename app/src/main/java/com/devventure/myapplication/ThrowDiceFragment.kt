@@ -23,7 +23,7 @@ class ThrowDiceFragment : Fragment() {
     ): View? {
         binding = FragmentThrowDiceBinding.inflate(inflater, container, false)
 
-        val playerName = "playername"
+        val playerName = arguments?.getString("player_name")
 
         val dice1 = binding?.dice1IV
         val dice2 = binding?.dice2IV
